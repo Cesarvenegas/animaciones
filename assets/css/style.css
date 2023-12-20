@@ -1,0 +1,35 @@
+.container {
+   
+    display: grid;
+    grid-template-areas: 'nav''main' 'footer';
+}
+
+nav{
+
+    grid-area: nav;
+    background: azure;
+}
+
+main{
+
+    grid-area: main;
+    background: bisque;
+}
+
+footer{
+
+    grid-area: footer;
+    background: rgb(58, 58, 156);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas: 
+      'nav main' 'nav main' 'footer footer';
+    }
+  }
